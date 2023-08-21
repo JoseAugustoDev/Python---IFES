@@ -16,10 +16,14 @@ while j < 10:
 
     j += 1
 
+#############
+
 fruits = ['Maçã', 'Amora', 'Laranja']
 
 for x in fruits:
     print(x)
+
+#############
 
 for x in 'paralelepípedo':
     print(x)
