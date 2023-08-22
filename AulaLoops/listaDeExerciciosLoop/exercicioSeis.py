@@ -1,4 +1,4 @@
-num_inicial = 1
+num_inicial = 0
 prox_num = 1
 
 quant_numeros_seq_fibo = int(input("Digite a quantidade de números que deseja ver da sequência de fibonacci: "))
