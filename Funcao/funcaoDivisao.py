@@ -1,7 +1,11 @@
 def dividir():
     num = int(input("Digite o número: "))
 
-    return num
+    if num != 0:
+        return num
+    else:
+        num = int(input("Digite o número novamente: "))
+        return num
 
 valor_a = dividir()
 valor_b = dividir()
