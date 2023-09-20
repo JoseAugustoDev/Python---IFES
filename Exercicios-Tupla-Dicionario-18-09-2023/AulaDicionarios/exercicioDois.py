@@ -5,7 +5,7 @@ for x in range(0,3):
 
     idade = int(input("Digite a idade: "))
 
-    pessoa["nome"] = nome
-    pessoa["idade"] = idade
+    pessoa[f"nome_{x}"] = nome
+    pessoa[f"idade_{x}"] = idade
 
-    print(pessoa)
+print(pessoa)
