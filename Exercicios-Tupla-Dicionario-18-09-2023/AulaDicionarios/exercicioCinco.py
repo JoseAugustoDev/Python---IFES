@@ -5,12 +5,10 @@ for x in range(1,4):
 
     idade = int(input("Digite a idade: "))
 
-    pessoa[f"nome_{x}"] = nome
-    pessoa[f"idade_{x}"] = idade
+    pessoa[f"{nome}"] = idade
 
 escolha_usuario = input("Digite a pessoa que gostaria de saber a idade: ")
 
 for x, y in pessoa.items():  
-    if y == escolha_usuario:
-        idade_usuario = pessoa[f"idade_{x[5:6]}"]
-        print(f"A idade de {y} é {idade_usuario}")
+    if x == escolha_usuario:
+        print(f"A idade de {x} é {y}")
