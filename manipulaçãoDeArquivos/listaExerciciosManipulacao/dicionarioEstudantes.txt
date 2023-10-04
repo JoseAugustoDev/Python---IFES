@@ -1,3 +1,4 @@
-{'nome': 'jose', 'idade': '18', 'curso': 'gostoso'}
-{'nome': 'milena', 'idade': '25', 'curso': 'oi'}
-{'nome': 'renan', 'idade': '19', 'curso': 'para de olhar o chatgpt'}
+{'nome': 'Jose', 'idade': '1', 'curso': '1'}
+{'nome': 'Renan', 'idade': '2', 'curso': '2'}
+{'nome': 'Milena', 'idade': '3', 'curso': '3'}
+{'nome': 'teste', 'idade': 'teste', 'curso': 'teste'}
