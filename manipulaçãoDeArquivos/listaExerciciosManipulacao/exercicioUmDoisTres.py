@@ -1,3 +1,5 @@
+import json
+
 with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudantes.txt', 'w') as lista:
     resp = 1
 
@@ -17,11 +19,11 @@ with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudant
         resp = int(input("Digite 1 se deseja continuar: \nDigite 0 se deseja parar: \n"))
 
 with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudantes.txt', 'r') as arquivo:
-    escolha_usuario = input("Digite 'nome' para mudar o nome: \nDigite 'idade' para mudar a idade: \nDigite 'curso' para mudar o curso: \n")
-
-    escolha_aluno = input("Qual aluno será feita a atualização: ")
-
-    mudanca = input("Insira o novo valor: ")    
+    escolha_aluno = input("Qual aluno deseja procurar: ")
     
     for linha in arquivo:
-        print(linha)
+
+        if escolha_aluno in linha:
+
+            print(linha)
+
