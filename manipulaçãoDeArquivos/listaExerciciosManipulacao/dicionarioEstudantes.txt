@@ -1,2 +1,1 @@
-{'nome': 'nas', 'idade': '12', 'curso': '312'}
-{'nome': 'as', 'idade': '12', 'curso': '3a'}
+{'nome': 'Jose', 'idade': 18, 'curso': 'TI'}
