@@ -1,3 +1,6 @@
-from exercicioUmTres import ler_arquivo
+from ler_arquivo import ler_arquivo
 
-ler_arquivo()
+lista = ler_arquivo('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudantes.txt')
+
+for item in lista:
+    print(item)
