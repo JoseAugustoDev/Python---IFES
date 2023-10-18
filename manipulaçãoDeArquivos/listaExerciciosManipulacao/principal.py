@@ -1,3 +1,6 @@
+from procurarAluno import procurarAluno
+from atualizarAluno import atualizarAluno
+
 def ler_dados():
 
     nome_estudante = input("Digite o nome do estudante: ")
@@ -18,11 +21,8 @@ def criar_arquivo(dados_aluno):
 
         lista.write(f"{dados_aluno}\n")
 
-# def ler_arquivo():
-#     with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudantes.txt', 'r') as lista:
-#         for linha in lista:
-#             print(linha)
-
 if __name__ == '__main__':
     dados_alunos = ler_dados()
     criar_arquivo(dados_aluno=dados_alunos)
+    aluno_escolhido = procurarAluno()
+    print(atualizarAluno(aluno_escolhido=aluno_escolhido))
