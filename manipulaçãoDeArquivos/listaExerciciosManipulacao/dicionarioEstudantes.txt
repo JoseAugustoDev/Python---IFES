@@ -1,1 +1,0 @@
-{'nome': 'Jose', 'idade': 18, 'curso': 'Informatica'}

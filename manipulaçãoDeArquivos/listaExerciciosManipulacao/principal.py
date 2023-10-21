@@ -1,6 +1,3 @@
-from procurarAluno import procurarAluno
-from atualizarAluno import atualizarAluno
-
 def ler_dados():
 
     nome_estudante = input("Digite o nome do estudante: ")
@@ -15,14 +12,18 @@ def ler_dados():
 
     return estudante
 
-def criar_arquivo(dados_aluno):
+def ler_varios_alunos():
+    quantidade = int (input("Digite a Quantidade: "))
+    alunos = []
+    for x in range (0,quantidade):
+        aluno = ler_dados()
+        alunos.append (aluno)
+    
+    return alunos
 
-    with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudantes.txt', 'w') as lista:
+def criar_arquivo_lista(lista, nome_arquivo):
+    with open (nome_arquivo,"w") as arquivo:
+        for item_lista in lista:
+            item_lista = str(item_lista)
+            arquivo.write(f"{item_lista}\n") 
 
-        lista.write(f"{dados_aluno}\n")
-
-if __name__ == '__main__':
-    dados_alunos = ler_dados()
-    criar_arquivo(dados_aluno=dados_alunos)
-    aluno_escolhido = procurarAluno()
-    print(atualizarAluno(aluno_escolhido=aluno_escolhido))

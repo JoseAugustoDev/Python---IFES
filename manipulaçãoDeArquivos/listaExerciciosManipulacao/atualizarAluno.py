@@ -3,7 +3,7 @@ import ast
 def atualizarAluno(aluno_escolhido):
     escolha_atualizar = int(input("Digite 1 para atualizar o nome \nDigite 2 para atualizar a idade \nDigite 3 para atualizar o curso\n"))
 
-    with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/dicionarioEstudantes.txt', 'r') as lista_alunos:
+    with open('manipulaçãoDeArquivos/listaExerciciosManipulacao/alunos.txt', 'r') as lista_alunos:
         for linha in lista_alunos:
             if aluno_escolhido in linha:
 
