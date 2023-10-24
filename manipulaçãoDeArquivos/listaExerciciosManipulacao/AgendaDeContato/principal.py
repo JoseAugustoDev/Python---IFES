@@ -2,19 +2,28 @@ from excluir import excluirUsuario
 from atualizar import atualizarLista
 from adicionar import adicionarUsuario, adicionarVarios
 from visualizar import visualizarLista
+from criar_arquivo import criar_arquivo_lista
 
 print("----Sistema de Agenda----")
 print("---O que deseja fazer:---")
 
-escolha_usuario = input("Digite 1 para Adicionar \nDigite 2 para Visualizar \nDigite 3 para Atualizar \nDigite 4 para Excluir \nDigite 0 para encerrar")
-while True:
+escolha_usuario = int(input("Digite 1 para Adicionar \nDigite 2 para Visualizar \nDigite 3 para Atualizar \nDigite 4 para Excluir \nDigite 0 para encerrar\n"))
+
+resp = 1
+
+while resp != 0:
+    
     if escolha_usuario == 1:
         quant_usuarios = int(input("Digite 1 para adicionar apenas 1 contatos \nDigite 2 para adicionar 2 ou mais usuarios: "))
 
         if quant_usuarios == 1:
-            adicionarUsuario()
+            dados = adicionarUsuario()
         elif quant_usuarios == 2:
-            adicionarVarios()
+            dados = adicionarVarios()
+
+        criar_arquivo_lista(lista=dados, nome_arquivo="manipulaçãoDeArquivos/listaExerciciosManipulacao/AgendaDeContato/contatos.txt") 
+
+        resp = int(input("Digite 0 para encerrar \nPressione qualquer tecla para continuar \n"))
 
     elif escolha_usuario == 2:
         visualizarLista()
