@@ -23,18 +23,21 @@ while resp != 0:
 
         criar_arquivo_lista(lista=dados, nome_arquivo="manipulaçãoDeArquivos/listaExerciciosManipulacao/AgendaDeContato/contatos.txt") 
 
-        resp = int(input("Digite 0 para encerrar \nPressione qualquer tecla para continuar \n"))
+        resp = int(input("Digite 0 para encerrar \nDigite 1 para continuar \n"))
 
     elif escolha_usuario == 2:
         visualizarLista()
+        break
 
     elif escolha_usuario == 3:
         visualizarLista()
         escolher_contato = input("Qual usuario deseja escolher: ")
         atualizarLista(contato_escolhido=escolher_contato)
+        break
 
     elif escolha_usuario == 4:
         excluirUsuario()
+        break
 
     elif escolha_usuario == 0:
         break

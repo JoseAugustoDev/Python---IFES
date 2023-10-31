@@ -4,11 +4,13 @@ def adicionarUsuario():
             nome_contato = input("Digite o nome do contato: ")
             ddd_contato = int(input("Digite o DDD: "))
             numero_contato = int(input("Digite o número do telefone: "))
+            endereco_contato = input("Digite o endereço do contato: ")
 
             contato = {
                 "nome": nome_contato,
                 "ddd": ddd_contato,
-                "numero": numero_contato
+                "numero": numero_contato,
+                "endereco": endereco_contato
             }
             
     return contato
