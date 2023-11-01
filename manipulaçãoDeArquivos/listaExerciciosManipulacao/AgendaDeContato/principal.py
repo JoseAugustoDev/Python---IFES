@@ -31,12 +31,13 @@ while resp != 0:
 
     elif escolha_usuario == 3:
         visualizarLista()
-        escolher_contato = input("Qual usuario deseja escolher: ")
+        escolher_contato = input("Qual usuario deseja atualizar: ")
         atualizarLista(contato_escolhido=escolher_contato)
         break
 
     elif escolha_usuario == 4:
-        excluirUsuario()
+        escolher_contato = input("Qual usuario deseja excluir: ")
+        excluirUsuario(contato_escolhido=escolher_contato)
         break
 
     elif escolha_usuario == 0:

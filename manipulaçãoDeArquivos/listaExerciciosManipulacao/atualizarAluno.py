@@ -16,5 +16,7 @@ def atualizarAluno(aluno_escolhido):
                 elif (escolha_atualizar == 3):
                     teste["curso"] = input("Digite o novo curso: ")
 
+                print(teste)
+
                 return teste
             

@@ -18,5 +18,7 @@ def atualizarLista(contato_escolhido):
                 elif (escolha_atualizar == 4):
                     contato["endereco"] = input("Digite novo endereço: ")
 
+                print(contato)
+
                 return contato
             

@@ -1,4 +1,2 @@
-nome
-ddd
-numero
-endereco
+{'nome': 'Jose Au', 'ddd': 27, 'numero': 928492849, 'endereco': 'ruaira'}
+{'nome': 'PREDO', 'ddd': 192, 'numero': 249829482, 'endereco': 'aiiaf'}
